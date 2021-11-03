@@ -51,12 +51,14 @@
     "loader/",
     "custom-element/"
   ],
+  "private":true,
+  
   "scripts": {
     "build": "stencil build --prod --docs",
-    "build:demo": "cd ./dem/ && rm -rf node_modules && npm i && npm run build",
+    "build:demo": "cd ./packages/demo/  && yarn && yarn build",
     "serve": "stencil build --dev --watch --serve",
     "generate": "stencil generate",
-    "deploy": "npm run build:demo && gh-pages -d ./dem/src/.vuepress/dist",
+    "deploy": "yarn build:demo && gh-pages -d ./packages/demo/src/.vuepress/dist",
     "prettier": "npx prettier --write ./src"
   },
   "devDependencies": {
@@ -86,6 +88,7 @@
     "rxjs": "^6.6.3",
     "svelte": "^3.31.2",
     "typescript": "^3.9.7",
-    "vue": "^3.0.5"
+    "vue": "^3.0.5",
+    "vuepress": "^1.8.2"
   }
 }
