@@ -53,10 +53,10 @@
   ],
   "scripts": {
     "build": "stencil build --prod --docs",
-    "build:demo": "cd ./demo/ && rm -rf node_modules && npm i && npm run build",
+    "build:demo": "cd ./dem/ && rm -rf node_modules && npm i && npm run build",
     "serve": "stencil build --dev --watch --serve",
     "generate": "stencil generate",
-    "deploy": "npm run build:demo && gh-pages -d ./demo/src/.vuepress/dist",
+    "deploy": "npm run build:demo && gh-pages -d ./dem/src/.vuepress/dist",
     "prettier": "npx prettier --write ./src"
   },
   "devDependencies": {
