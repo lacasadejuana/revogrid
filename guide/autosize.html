@@ -20,13 +20,13 @@
   Documentation
 </a></div><div class="nav-item"><a href="/revogrid/demo/" class="nav-link">
   Demo
-</a></div> <a href="https://github.com/revolist/revogrid" target="_blank" rel="noopener noreferrer" class="repo-link">
+</a></div> <a href="https://github.com/lacasadejuana/revogrid" target="_blank" rel="noopener noreferrer" class="repo-link">
     GitHub
     <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/revogrid/guide/" class="nav-link router-link-active">
   Documentation
 </a></div><div class="nav-item"><a href="/revogrid/demo/" class="nav-link">
   Demo
-</a></div> <a href="https://github.com/revolist/revogrid" target="_blank" rel="noopener noreferrer" class="repo-link">
+</a></div> <a href="https://github.com/lacasadejuana/revogrid" target="_blank" rel="noopener noreferrer" class="repo-link">
     GitHub
     <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="autosize-feature"><a href="#autosize-feature" class="header-anchor">#</a> Autosize feature</h1> <p>Autosize is aiming to provide intuitive functionality of content dependent entities. Meanwhile some limitations applied.</p> <h2 id="column-autosize"><a href="#column-autosize" class="header-anchor">#</a> Column autosize</h2> <p>In order to achieve column autosize support you have to set <code>autoSizeColumn</code> grid property.</p> <p><code>autoSizeColumn</code> accept different options. The easiest way to start with to use excel like option: <code>autoSizeColumn = true</code> (by default it's <code>false</code>).
 Based on this option every column which has <code>autoSize: true</code> property can be recalculated on column header separator double click.</p> <h3 id="quick-start"><a href="#quick-start" class="header-anchor">#</a> Quick start</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// define autosize per column, if you don't use advance config option allColumns (read below section #Advance usage) </span>
