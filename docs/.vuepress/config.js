@@ -73,7 +73,7 @@ module.exports = {
   title: 'RevoGrid - Excel like data grid component',
   description,
 
-  base: '/revogrid/',
+  base: '/',
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
@@ -82,7 +82,7 @@ module.exports = {
     ['link', { href: 'https://fonts.googleapis.com/css?family=Nunito:700, 400|Roboto:400,400i,700&display=swap', rel: 'stylesheet' }],
   ],
   themeConfig: {
-    repo: 'https://github.com/revolist/revogrid',
+    repo: 'https://github.com/lacasadejuana/revogrid',
     editLinks: false,
     docsDir: '',
     editLinkText: '',
