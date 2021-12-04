@@ -7,9 +7,9 @@
     "name": "revolist"
   },
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "deploy": "gh-pages -d ./src/.vuepress/dist"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "gh-pages -d ./docs/.vuepress/dist"
   },
   "license": "MIT",
   "devDependencies": {

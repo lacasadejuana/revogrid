@@ -77,16 +77,25 @@ export default function generateFakeDataObject(rows, colsNumber) {
 }
 
 export function generateFakeDataDemo(rows, colsNumber) {
-	const defColumns = [
-		{
+	const defColumns = [{
+	
+		children: [{
 			name: 'Name',
 			prop: 'name',
 			rowDrag: true,
 			sortable: true,
 			order: 'asc',
 			pin: 'colPinStart',
+
 			size: 200
 		},
+		{
+			pin: 'colPinStart',
+					sortable: true,
+					name: 'Company',
+					prop: 'company',
+					size: 200,
+				}]},
 		{
 			name: 'Personal',
 			children: [
@@ -96,12 +105,7 @@ export function generateFakeDataDemo(rows, colsNumber) {
 					prop: 'age',
 					pin: 'colPinEnd',
 				},
-				{
-					sortable: true,
-					name: 'Company',
-					prop: 'company',
-					size: 200,
-				},
+				
 				{
 					name: 'Eyes',
 					prop: 'eyeColor',
@@ -122,14 +126,14 @@ export function generateFakeDataDemo(rows, colsNumber) {
 	const columns = [...defColumns];
 	const nameColumn = columns[0];
 	nameColumn.autoSize = true;
-	nameColumn.name = 'Name(autosize)'
+	nameColumn.name = 'Funcionario'
 
 	const companies = Object.keys(rows.reduce((r, p) => {
         r[p.company] = p.company;
         return r;
 	  }, {}));
-	const companyColumn = columns[1].children[1];  
-	columns[1].children[1] = {
+	const companyColumn = columns[0].children[1];  
+	columns[0].children[1] = {
 		...companyColumn,
 		columnType: 'select',
 		source: companies,

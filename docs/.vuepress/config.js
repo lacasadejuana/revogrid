@@ -67,87 +67,7 @@ const frameworksLinks = [{
 	img: '/svelte.svg',
 	url: `${baseLink}${svelteLink}`,
 }];
-
-const guide = [{
-		title: 'Documentation',
-		collapsable: false,
-		children: [
-			'',
-			'installing',
-			{
-				title: 'Column definitions',
-				collapsable: false,
-				children: [
-					'column.properties',
-					'column.pinned',
-					'column.customHeader',
-					'column.grouping',
-					'autosize',
-					'column.resize'
-				]
-			},
-			'column.types',
-			{
-				title: 'Cells',
-				collapsable: false,
-				children: [
-					'cell.renderer',
-					'cell.editor',
-					'cell.properties',
-				]
-			},
-			'sorting',
-			'filters',
-			{
-				title: 'Row properties',
-				collapsable: false,
-				children: [
-					'rows.pinned',
-					'rows.class',
-					'rows.headers',
-					'rows.size'
-				]
-			},
-			{
-				title: 'Theme Manager',
-				collapsable: false,
-				children: ['theme', 'theme.light', 'theme.dark'],
-			},
-			'jsx.template',
-			'export.plugin',
-			'grid.size',
-			'migration',
-			'api',
-		]
-	},
-	frameworks,
-];
-const demo = [{
-  title: 'Use cases',
-  collapsable: false,
-  children: ['', 'jsx.template', {
-    title: 'Vanilla JS',
-    collapsable: false,
-    children: ['js.usage', 'select.column', 'jsx.tree']
-  }, {
-    title: 'Vue',
-    collapsable: false,
-    children: ['list', 'selectAll', 'grouping', 'vue.store.data']
-    }, {
-      title: 'React',
-      collapsable: false,
-      children: ['react.sample']
-  }, {
-    title: 'Angular',
-    collapsable: false,
-    children: ['angular.sample']
-}, {
-  title: 'Svelte',
-  collapsable: false,
-  children: ['svelte.sample']
-}]
-}];
-
+ 
 
 module.exports = {
   title: 'RevoGrid - Excel like data grid component',
@@ -169,20 +89,8 @@ module.exports = {
     logo: '/logo.svg',
     frameworks: frameworksLinks,
     lastUpdated: false,
-    nav: [
-      {
-        text: 'Documentation',
-        link: '/guide/',
-      },
-      {
-        text: 'Demo',
-        link: '/demo/',
-      }
-    ],
-    sidebar: {
-      '/guide/': guide,
-      '/demo/': demo,
-    }
+     
+    
   },
   plugins: [
     '@vuepress/plugin-back-to-top',

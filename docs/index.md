@@ -40,3 +40,6 @@ features:
 
 footer: <small class="copyright">Designed by <a class="theme-link" href="http://revolist.eu" target="_blank">Revolist OU</a> for developers and people who seek a way of improvement</small>
 ---
+<ClientOnly>
+<demo-page/>
+</ClientOnly>
